@@ -19,7 +19,7 @@ const sendMessage = (event) => {
             // console.log(data);
 
         });
-    };
+};
 
 const updateConversation = (message) => {
     // console.log(message);
