@@ -42,6 +42,17 @@ express()
       res.status(200).json({ status: 200, message });
     // }, randomTime);
   })
+
+  .get('/parrot-message', (req, res) => {
+    const message = { author: 'parrot', text: `${req.query.text}` };
+    console.log(message)
+    const randomTime = 200;
+
+    setTimeout(() => {
+      res.status(200).json({ status: 200, message });
+    }, randomTime);
+  })
+
   // add new endpoints here ☝️
   // ---------------------------------
   // Nothing to modify below this line
